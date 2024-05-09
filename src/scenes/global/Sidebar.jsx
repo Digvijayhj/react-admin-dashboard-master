@@ -77,7 +77,7 @@ const Sidebar = () => {
                 ml="15px"
               >
                 <Typography variant="h3" color={colors.grey[100]}>
-                  ADMINIS
+                  Game Room
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
                   <MenuOutlinedIcon />
@@ -104,14 +104,18 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                   Ed Roh
 =======
                     Jack Doherty
 >>>>>>> Stashed changes
+=======
+                  Student Name
+>>>>>>> 44a24c37294ffbfad352937a0c78a35c100dd2e3
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                  CSUDH Student
                 </Typography>
               </Box>
             </Box>
@@ -119,7 +123,7 @@ const Sidebar = () => {
 
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
-              title="Dashboard"
+              title="My Dashboard"
               to="/"
               icon={<HomeOutlinedIcon />}
               selected={selected}
@@ -133,7 +137,7 @@ const Sidebar = () => {
             >
             </Typography>
             <Item
-              title="Manage Team"
+              title="My Bookings"
               to="/team"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
@@ -159,7 +163,6 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "0px 0 0px 20px" }}
             >
-              Pages
             </Typography>
             <Item
               title="Profile Form"
@@ -176,7 +179,7 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="FAQ Page"
+              title="Help / FAQ "
               to="/faq"
               icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
@@ -188,36 +191,8 @@ const Sidebar = () => {
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Charts
             </Typography>
-            <Item
-              title="Bar Chart"
-              to="/bar"
-              icon={<BarChartOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Pie Chart"
-              to="/pie"
-              icon={<PieChartOutlineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Line Chart"
-              to="/line"
-              icon={<TimelineOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Geography Chart"
-              to="/geography"
-              icon={<MapOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+
           </Box>
         </Menu>
       </ProSidebar>

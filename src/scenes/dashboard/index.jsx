@@ -14,31 +14,9 @@ const Dashboard = () => {
     const [games, setGames] = useState([]);
     const [showAddGameForm, setShowAddGameForm] = useState(false);
 
-<<<<<<< Updated upstream
-  return (
-      <Box m="20px">
-        {/* HEADER */}
-        <Box display="flex" justifyContent="space-between" alignItems="center">
-          <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
 
-          <Box>
-            <Button
-                sx={{
-                  backgroundColor: colors.blueAccent[700],
-                  color: colors.grey[100],
-                  fontSize: "14px",
-                  fontWeight: "bold",
-                  padding: "10px 20px",
-                }}
-            >
-              <DownloadOutlinedIcon sx={{ mr: "10px" }} />
-              Download Reports
-            </Button>
-          </Box>
-        </Box>
-      </Box>
-  );
-=======
+
+
     const addNewGame = (game) => {
         setGames([...games, game]);
         setShowAddGameForm(false); // Close the form after adding a game
@@ -63,7 +41,7 @@ const Dashboard = () => {
             </div>
         </div>
     );
->>>>>>> Stashed changes
 };
+
 
 export default Dashboard;

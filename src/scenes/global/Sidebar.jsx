@@ -104,18 +104,10 @@ const Sidebar = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-                  Ed Roh
-=======
                     Jack Doherty
->>>>>>> Stashed changes
-=======
-                  Student Name
->>>>>>> 44a24c37294ffbfad352937a0c78a35c100dd2e3
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  CSUDH Student
+                  Game Room Attendant
                 </Typography>
               </Box>
             </Box>

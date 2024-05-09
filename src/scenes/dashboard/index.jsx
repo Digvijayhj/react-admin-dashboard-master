@@ -1,22 +1,20 @@
-import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
+import {Box, Button, Grid, IconButton, Typography, useTheme} from "@mui/material";
 import { tokens } from "../../theme";
-import { mockTransactions } from "../../data/mockData";
-import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
-import EmailIcon from "@mui/icons-material/Email";
-import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
-import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import TrafficIcon from "@mui/icons-material/Traffic";
+import { useState } from "react";
 import Header from "../../components/Header";
-import LineChart from "../../components/LineChart";
-import GeographyChart from "../../components/GeographyChart";
-import BarChart from "../../components/BarChart";
-import StatBox from "../../components/StatBox";
-import ProgressCircle from "../../components/ProgressCircle";
+import "./dashboard.css";
+import GameBox from "../Widget/GameBox";
+import "../Widget/GameBox.css";
+import AddGameForm from "../AddGameForm/AddGameForm";
+import ps5Image from "../../images/ps5.jpg";
+import poolImage from "../../images/poolImage.jpg";
+
 
 const Dashboard = () => {
-  const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+    const [games, setGames] = useState([]);
+    const [showAddGameForm, setShowAddGameForm] = useState(false);
 
+<<<<<<< Updated upstream
   return (
     <Box m="20px">
       {/* HEADER */}
@@ -279,6 +277,32 @@ const Dashboard = () => {
       </Box>
     </Box>
   );
+=======
+    const addNewGame = (game) => {
+        setGames([...games, game]);
+        setShowAddGameForm(false); // Close the form after adding a game
+    };
+
+    return (
+        <div className="dashboard">
+            <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+            <button className="add-game-button" onClick={() => setShowAddGameForm(true)}>Add New Game</button>
+            {showAddGameForm && (
+                <div className="add-game-modal">
+                    <AddGameForm onAddGame={addNewGame} />
+                </div>
+            )}
+            <div className="game-box-container">
+                {games.map((game) => (
+                    <GameBox
+                        key={game.id}
+                        game={game}
+                    />
+                ))}
+            </div>
+        </div>
+    );
+>>>>>>> Stashed changes
 };
 
 export default Dashboard;

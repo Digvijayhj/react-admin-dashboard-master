@@ -26,8 +26,8 @@ const Invoices = () => {
       flex: 1,
     },
     {
-      field: "cost",
-      headerName: "Cost",
+      field: "amount",
+      headerName: "Amount",
       flex: 1,
       renderCell: (params) => (
         <Typography color={colors.greenAccent[500]}>
@@ -44,7 +44,7 @@ const Invoices = () => {
 
   return (
     <Box m="20px">
-      <Header title="INVOICES" subtitle="List of Invoice Balances" />
+      <Header title="INVOICES" subtitle="List of Invoices " />
       <Box
         m="40px 0 0 0"
         height="75vh"

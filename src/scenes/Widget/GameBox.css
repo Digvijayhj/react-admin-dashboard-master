@@ -1,0 +1,57 @@
+.game-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px;
+    margin-right: 50px;
+    width: 250px; /* Adjust width as needed */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes space between items */
+}
+
+.game-image-container {
+    margin-bottom: 10px;
+}
+
+.game-box-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap game boxes to next line */
+    justify-content: left; /* Center game boxes */
+    margin-left: 30px;
+}
+
+.game-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.game-title {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.game-actions {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+}
+
+.timer-controls {
+    margin-top: 5px;
+}
+
+.game-actions button {
+    padding: 5px;
+    margin: 2px;
+    font-size: 0.8em;
+    width: auto;
+    min-width: 50px;
+    border-radius: 10px;
+    background-color: skyblue;
+}
+
+.game-actions button:hover {
+    background-color: #007bff;
+}

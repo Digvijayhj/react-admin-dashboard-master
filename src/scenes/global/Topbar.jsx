@@ -17,7 +17,7 @@ const Topbar = () => {
   return (
     <Box display="flex" justifyContent="space-between" p={2}>
       {/* SEARCH BAR */}
-      <Box
+      {/*<Box
         display="flex"
         backgroundColor={colors.primary[400]}
         borderRadius="3px"
@@ -26,7 +26,14 @@ const Topbar = () => {
         <IconButton type="button" sx={{ p: 1 }}>
           <SearchIcon />
         </IconButton>
-      </Box>
+      </Box>*/}
+      {/* ORGANIZATION LOGO */}
+      <Box
+          component="img"
+          src={`../../assets/csu1.png`} // Specify the path to your logo image
+          sx={{ height: 50 }} // Adjust the height to fit the top bar
+          alt="CSUDH LSU"
+      />
 
       {/* ICONS */}
       <Box display="flex">

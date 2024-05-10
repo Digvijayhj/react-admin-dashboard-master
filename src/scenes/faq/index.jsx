@@ -12,12 +12,12 @@ const FAQ = () => {
   const colors = tokens(theme.palette.mode);
   return (
     <Box m="20px">
-      <Header title="FAQ" subtitle="Frequently Asked Questions Page" />
+      <Header title="FAQ" subtitle="Frequently Asked Questions " />
 
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            An Important Question
+            How to create new Events?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -30,7 +30,7 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Another Important Question
+            Important Question
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -43,7 +43,7 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Your Favorite Question
+            Random Question
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -56,7 +56,7 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Some Random Question
+            Random Question
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -69,7 +69,7 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            The Final Question
+            Last Question
           </Typography>
         </AccordionSummary>
         <AccordionDetails>

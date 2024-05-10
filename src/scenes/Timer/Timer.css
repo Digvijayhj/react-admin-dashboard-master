@@ -1,0 +1,23 @@
+.timer {
+    font-size: 0.8em; /* Smaller font size for the timer to fit */
+}
+
+.timer-display {
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.timer button {
+    padding: 5px; /* Smaller padding */
+    margin: 2px; /* Reduced margin between buttons */
+    font-size: 0.8em; /* Smaller font size for text in buttons */
+    width: auto; /* Allow buttons to size based on content */
+    min-width: 50px; /* Minimum width so buttons are not too small */
+    border-radius:  10px;
+    background-color: skyblue;
+}
+
+/* Optional: Styles for a more compact button layout */
+.timer button + .timer button {
+    margin-left: 0; /* Remove left margin for adjacent buttons */
+}

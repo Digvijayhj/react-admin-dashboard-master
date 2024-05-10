@@ -11,7 +11,7 @@ const Team = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const columns = [
-    { field: "id", headerName: "ID" },
+    { field: "id", headerName: "Student ID" },
     {
       field: "name",
       headerName: "Name",
@@ -19,23 +19,23 @@ const Team = () => {
       cellClassName: "name-column--cell",
     },
     {
-      field: "age",
-      headerName: "Age",
-      type: "number",
+      field: "paymentAmount",
+      headerName: "Amount Paid",
+      type: "string",
       headerAlign: "left",
       align: "left",
     },
     {
-      field: "phone",
-      headerName: "Phone Number",
+      field: "paymentType",
+      headerName: "Payment Method",
       flex: 1,
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "duration",
+      headerName: "Duration",
       flex: 1,
     },
-    {
+    /*{
       field: "accessLevel",
       headerName: "Access Level",
       flex: 1,
@@ -65,12 +65,12 @@ const Team = () => {
           </Box>
         );
       },
-    },
+    },*/
   ];
 
   return (
     <Box m="20px">
-      <Header title="TEAM" subtitle="Managing the Team Members" />
+      <Header title="BOOKINGS" subtitle="Manage bookings" />
       <Box
         m="40px 0 0 0"
         height="75vh"
